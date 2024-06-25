@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* --- GRILLA ---- */
+
+.container {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 15% 85%; 
+    grid-template-rows:100%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "barra-lateral contenido contenido"
+      "barra-lateral contenido contenido"
+      "barra-lateral contenido contenido"; 
+  }
+
+
+  /* --- BARRA LATERAL */
+
+  .barra-lateral { 
+    grid-area: barra-lateral;
+    background-color: rgb(43, 150, 144);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    
+}
+
+.barra-lateral__img{
+    margin-top: 20px;
+}
+
+.barra-lateral__nombre{
+    margin-top: 20px;
+    color: white;
+}
+
+
+.barra-lateral__lista{
+    list-style: none;
+
+}
+
+.barra-lateral__item{
+    margin: 70px;
+    width: 100%;
+}
+
+.barra-lateral__link{
+   text-decoration: none;
+   color: white;
+}
+
+  .contenido { 
+    grid-area: contenido; 
+   background-color: rgb(51, 190, 121);
+}
