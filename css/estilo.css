@@ -1,111 +1,167 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
 
 
-/* --- GRILLA ---- */
-
-.container {
-    display: grid;
-    height: 600px;
-    grid-template-columns: 15% 85%; 
-    grid-template-rows:100%; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "barra-lateral contenido contenido"
-      "barra-lateral contenido contenido"
-      "barra-lateral contenido contenido"; 
-  }
-
-
-  /* --- BARRA LATERAL */
-
-  .barra-lateral { 
-    grid-area: barra-lateral;
-    background-color: rgb(43, 150, 144);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position:fixed;
-    height: 100%;
-}
-
-.barra-lateral__img{
-    margin-top: 20px;
-}
-
-.barra-lateral__nombre{
-    margin-top: 20px;
-    color: white;
-}
-
-
-.barra-lateral__lista{
-    list-style: none;
-
-}
-
-.barra-lateral__item{
-    margin: 70px;
-    width: 100%;
-}
-
-.barra-lateral__link{
-   text-decoration: none;
-   color: white;
-}
-
-  .contenido { 
-    grid-area: contenido; 
-   background-color: rgb(51, 190, 121);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-
-  
-  
-}
-
-/* TITULO */
-
-.titulo{
-    margin: 20px;
-}
+    .main {
+        display: flex;
+    }
 
 
 
-.proyectos{
-    display: flex;
-    flex-wrap:wrap ;
-    
-}
-
-.proyectos__contenedor{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 15px 10px 20px -2px;
-    height: 200px;
-    width: 400px;
-    margin: 20px auto 20px auto;
-}
-
-.proyectos__contenedor img{
-   width: 100%;
-   height: 145px;
-}
 
 
-.proyectos__link-web{
+    /* --- BARRA LATERAL */
 
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 0;
-    
-}
+    .barra-lateral {
+        background-color: rgb(43, 150, 144);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        position: fixed;
 
-.proyectos__link-web a img{
-    height: 30px;
+    }
 
-}
+    .barra-lateral__img {
+        margin-top: 20px;
+    }
+
+    .barra-lateral__nombre {
+        margin-top: 20px;
+        color: white;
+    }
+
+
+    .barra-lateral__lista {
+        list-style: none;
+
+    }
+
+    .barra-lateral__item {
+        margin: 70px;
+        width: 100%;
+    }
+
+    .barra-lateral__link {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    /* CONTENIDO */
+
+    .contenido {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TITULO */
+
+    .titulo {
+        margin: 50px;
+
+
+    }
+
+    /* PROYECTOS  */
+
+
+
+    .proyectos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+    }
+
+
+    .proyectos__contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px black solid;
+        min-height: 200px;
+        min-width: 300px;
+       margin: 30px;
+
+    }
+
+    .proyectos__contenedor img {
+        width: 100%;
+    }
+
+    .proyectos__link-web {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .proyectos__link-web img {
+        width: 30px;
+        margin: 5px 15px;
+    }
+
+
+    /* SKILLS */
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .card-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        padding: 30px 0px;
+        border: solid 1px black;
+        margin: 20px auto;
+    }
+
+    .card-skill img {
+        margin: 15px 0;
+        height: 150px;
+    }
+
+
+    /*  CONTACTO */
+
+    .contacto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+    }
+
+    .contacto__lista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        padding: 50px;
+        border: solid black 1px;
+
+    }
+
+    .contacto__item{
+        margin: 20px;
+    }
+
+    .contacto__img{
+        height: 60px;
+    }
