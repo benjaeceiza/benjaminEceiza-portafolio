@@ -1,3 +1,7 @@
+    
+    @import url(../assets/tipografias/Rockybilly.ttf);
+    @import url(../assets/tipografias/ARCADECLASSIC.TTF);
+    
     * {
         margin: 0;
         padding: 0;
@@ -5,13 +9,17 @@
     }
 
 
+
+
+
+
+   
+   /* MAIN */
+   
     .main {
         display: flex;
+        background: linear-gradient(180deg,#376eb6,#214e8d,#214e8d,#406494,#406494,#47437c,#47437c,#9160ad,#8c59a4,#8643a5);
     }
-
-
-  
-
 
     /* --- BARRA LATERAL */
 
@@ -20,26 +28,28 @@
     }
     .barra-lateral-over {
         
-        background-color: rgb(43, 150, 144);
+        background-color: rgb(50, 189, 124);
         height: 100%;
         width: 60px;
         position: fixed;
+        box-shadow: 0px 0px 20px 5px black;
     }
 
     .barra-lateral-over img{
         height: 30px;
-        margin-top:300px;
+        margin-top: 900%;
         margin-left: 10px;
     }
 
     .barra-lateral {
        
-        background-color: rgb(43, 150, 144);
+        background-color: rgb(50, 189, 124);
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
         position: fixed;
+        box-shadow: 0px 0px 50px 5px black;
 
     }
 
@@ -74,21 +84,61 @@
      
     .contenido{
         
-        width: 98%;
-        margin-left: 50px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
+     
 
     }
    
 
     /* TITULO */
 
+
+    .contenedor-titulo-foto{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        
+    }
+
+    .contenedor-titulo-foto img{
+    
+
+        }
+
+    
+    .contenedor-titulos{
+        width: 80%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+        padding: 50px 0px;
+    }
+
     .titulo {
+        font-family: 'titulo';
+        color: white;
+        font-size: 4vw;
+        font-weight: 100;
+        
+    }
+
+    .titulo-nombre{
+      font-family: 'subtitulo';
+      font-size: 40px;
+      color: white;
+      font-weight: 100;
+    }
+
+    .subtitulo{
         margin: 50px;
-
-
+        font-family: 'subtitulo';
+        color: white;
+        font-weight: 100;
     }
 
     /* PROYECTOS  */
@@ -99,6 +149,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .contenedor-proyectos-full {
@@ -114,15 +165,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px black solid;
+        border: 1px white solid;
         min-height: 200px;
         min-width: 300px;
-        margin: 15px;
+        margin: 10px;
 
     }
 
+    
     .proyectos__contenedor img {
-        width: 100%;
+        width: 350px;
+        
     }
 
     .proyectos__link-web {
@@ -130,6 +183,8 @@
         justify-content: center;
         width: 100%;
         margin: auto;
+        background-color: white;
+      
 
     }
 
@@ -145,6 +200,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .contenedor-skills {
@@ -161,13 +217,27 @@
         align-items: center;
         width: 200px;
         padding: 30px 0px;
-        border: solid 1px black;
+        border: solid 5px rgb(50, 189, 124);
         margin: 20px auto;
+        background-image: url(../assets/fondo-card.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover ;
+        border-radius: 10px;
     }
 
     .card-skill img {
         margin: 15px 0;
         height: 150px;
+        filter: drop-shadow(0px 0px 5px  white);
+    }
+
+    .sass{
+       width: 150px;
+    }
+
+    .card-skill p{
+        color: white;
     }
 
 
@@ -181,6 +251,7 @@
         justify-content: center;
         padding-bottom: 50px;
 
+
     }
 
     .contacto__lista {
@@ -189,7 +260,8 @@
         justify-content: space-around;
         list-style: none;
         padding: 50px;
-        border: solid black 1px;
+        border: solid rgb(50, 189, 124) 5px;
+        background-color: #5d2f72;
 
     }
 
@@ -201,4 +273,19 @@
         height: 60px;
     }
 
-    
+
+
+
+  
+
+    /* TIPOGRAFIAS */
+
+    @font-face {
+        font-family:'titulo';
+        src: url(../assets/tipografias/Rockybilly.ttf);
+    }
+
+    @font-face {
+        font-family:'subtitulo';
+        src: url(../assets/tipografias/ARCADECLASSIC.TTF);
+    }
