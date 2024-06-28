@@ -21,63 +21,7 @@
         background: linear-gradient(180deg,#376eb6,#214e8d,#214e8d,#406494,#406494,#47437c,#47437c,#9160ad,#8c59a4,#8643a5);
     }
 
-    /* --- BARRA LATERAL */
-
-    .none{
-        display: none;
-    }
-    .barra-lateral-over {
-        
-        background-color: rgb(50, 189, 124);
-        height: 100%;
-        width: 60px;
-        position: fixed;
-        box-shadow: 0px 0px 20px 5px black;
-    }
-
-    .barra-lateral-over img{
-        height: 30px;
-        margin-top: 900%;
-        margin-left: 10px;
-    }
-
-    .barra-lateral {
-       
-        background-color: rgb(50, 189, 124);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        position: fixed;
-        box-shadow: 0px 0px 50px 5px black;
-
-    }
-
-    .barra-lateral__img {
-        margin-top: 20px;
-    }
-
-    .barra-lateral__nombre {
-        margin-top: 20px;
-        color: white;
-    }
-
-
-    .barra-lateral__lista {
-        list-style: none;
-
-    }
-
-    .barra-lateral__item {
-        margin: 70px;
-        width: 100%;
-    }
-
-    .barra-lateral__link {
-        text-decoration: none;
-        color: white;
-    }
-
+    
 
 
     /* CONTENIDO */
@@ -105,11 +49,10 @@
         
     }
 
-    .contenedor-titulo-foto img{
-    
-
-        }
-
+    .foto{
+        border: solid 3px rgb(50, 189, 124);
+        
+    }
     
     .contenedor-titulos{
         width: 80%;
@@ -271,6 +214,7 @@
 
     .contacto__img {
         height: 60px;
+      
     }
 
 
